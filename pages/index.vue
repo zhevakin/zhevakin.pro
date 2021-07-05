@@ -15,7 +15,7 @@
           href="https://github.com/Xvakin"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey mr-4"
+          class="button--grey mr-8"
         >
           GitHub
         </a>
