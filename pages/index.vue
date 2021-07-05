@@ -1,49 +1,101 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <nuxt-content :document="page" />
-      <h1 class="title">Ivan Zhevakin</h1>
-      <h2>Product-focused web developer</h2>
-      <div class="links">
+      <div class="flex items-center mb-12 pt-4">
+        <div class="rounded-full overflow-hidden h-48 w-48 mr-12">
+          <img src="~/assets/images/ivan-zhevakin.jpg" />
+        </div>
+        <div>
+          <h1 class="title">Ivan Zhevakin</h1>
+          <h2 class="subtitle">Product-focused web developer</h2>
+        </div>
+      </div>
+      <div class="mb-8">
         <a
           href="https://github.com/Xvakin"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="button--grey mr-4"
         >
           GitHub
         </a>
+        <a
+          href="https://www.linkedin.com/in/xvakin/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          Linked In
+        </a>
+      </div>
+      <div class="mb-4">
+        Working as a web developer since 2008. Currently I’m focusing on
+        building the complex web applications using JS frameworks: React, Vue,
+        Angular. Besides I really care about good UI/UX and always trying not
+        just build the application but deliver great experience to users. Also I
+        believe that great projects could be completed only by high motivated
+        teams so I’m always trying to keep team communication at a high level.
+      </div>
+      <div>
+        <article
+          v-for="(job, index) in experience.jobs"
+          :key="index"
+          class="mb-12"
+        >
+          <small class="gray-300 text-sm">
+            <span v-if="job.till">
+              {{ job.from | date }} - {{ job.till | date }}
+            </span>
+            <span v-else> Since {{ job.from | date }} </span>
+          </small>
+          <div class="text-xl">
+            {{ job.title }}
+            <span> at </span>
+            <a :href="job.url" target="_blank">{{ job.company }}</a>
+          </div>
+          <div class="mb-2">
+            {{ job.description }}
+          </div>
+          <div class="mb-2">Stack: {{ job.stack.join(', ') }}</div>
+          <div v-if="job.tools" class="mb-2">
+            Tools: {{ job.tools.join(', ') }}
+          </div>
+        </article>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import dayjs from 'dayjs'
 export default {
+  filters: {
+    date(val) {
+      return dayjs(val).format('MMM YYYY')
+    },
+  },
   async asyncData({ $content }) {
-    const page = await $content('about').fetch()
+    const experience = await $content('experience').fetch()
 
     return {
-      page,
+      experience,
     }
   },
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+<style scoped>
+a {
+  @apply text-blue-600;
 }
-*/
+
 .container {
+  max-width: 1280px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .title {
@@ -52,6 +104,7 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
+  line-height: 1;
   color: #35495e;
   letter-spacing: 1px;
 }
@@ -62,9 +115,5 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
