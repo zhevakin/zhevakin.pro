@@ -1,13 +1,15 @@
 <template>
   <div class="container">
     <div>
-      <div class="flex items-center mb-12 pt-4">
-        <div class="rounded-full overflow-hidden h-48 w-48 mr-12">
-          <img src="~/assets/images/ivan-zhevakin.jpg" />
+      <div class="flex items-center mb-8 pt-4">
+        <div class="mr-8 lg:mr-12 w-32 lg:w-64">
+          <img src="~/assets/images/ivan-zhevakin.jpg" class="rounded-full" />
         </div>
         <div>
-          <h1 class="title">Ivan Zhevakin</h1>
-          <h2 class="subtitle">Product-focused web developer</h2>
+          <h1 class="text-2xl lg:text-6xl">Ivan Zhevakin</h1>
+          <h2 class="lg:text-3xl text-gray-600">
+            Product-focused web developer
+          </h2>
         </div>
       </div>
       <div class="mb-8">
@@ -96,24 +98,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  line-height: 1;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  padding: 0 15px;
 }
 </style>

@@ -19,7 +19,7 @@
       "till": "2020-06-01",
       "location": "remote",
       "description": "PaulCamper GmbH is Berlin based startup company developing camper vans sharing platform. I joined the company as the first frontend developer and my first goal was to build the MVP for the platform. When the company started to grow I was also responsible for building and managing the frontend team (5 devs).",
-      "stack": ["react", "nodejs"],
+      "stack": ["React", "Node"],
       "tools": ["GitHub", "Heroku", "Sentry", "Cloudflare", "Mixpanel", "Optimizely", "Sketch", "Zeplin"]
     },
     {
