@@ -1,0 +1,46 @@
+{
+  "jobs": [
+    {
+      "title": "Lead Frontend Developer",
+      "company": "Uscreen",
+      "url": "https://www.uscreen.tv/",
+      "from": "2020-06-01",
+      "location": "remote",
+      "description": "Uscreen is a popular Video OTT service with the 5-year history. The service was build by the backend developers so the frontend part was far from perfect. My main goal was to build the frontend team and set the higher standards for the frontend development in the company.",
+      "stack": ["Vue", "Ruby in Rails"],
+      "libs": ["vuex", "tailwindcss", "jest"],
+      "tools": ["GitHub", "Heroku", "Docker", "Storybook", "Sentry", "Fastly", "Mixpanel", "Figma"]
+    },
+    {
+      "title": "Lead Frontend Developer",
+      "company": "PaulCamper GmbH",
+      "url": "https://paulcamper.com/",
+      "from": "2015-11-01",
+      "till": "2020-06-01",
+      "location": "remote",
+      "description": "PaulCamper GmbH is Berlin based startup company developing camper vans sharing platform. I joined the company as the first frontend developer and my first goal was to build the MVP for the platform. When the company started to grow I was also responsible for building and managing the frontend team (5 devs).",
+      "stack": ["react", "nodejs"],
+      "tools": ["GitHub", "Heroku", "Sentry", "Cloudflare", "Mixpanel", "Optimizely", "Sketch", "Zeplin"]
+    },
+    {
+      "title": "Senior Frontend Developer",
+      "company": "Intermedia",
+      "url": "https://intermedia.com/",
+      "from": "2013-04-01",
+      "till": "2015-07-01",
+      "location": "Saint Petersburg, Russia",
+      "description": "Intermedia is cloud communication platform. My main role was to build the interfaces and dashboards for managing the service.",
+      "stack": ["angular", ".net"]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Alpari",
+      "url": "https://alpari.com/",
+      "from": "2010-08-01",
+      "till": "2012-09-01",
+      "location": "Moscow, Russia",
+      "description": "Alpari is one of the biggest Russian Forex companies. Being part of the web developers team we launched the redesigned version of the main company website.",
+      "stack": ["jquery", "php"]
+    }
+  ]
+}
