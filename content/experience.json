@@ -30,7 +30,7 @@
       "till": "2015-07-01",
       "location": "Saint Petersburg, Russia",
       "description": "Intermedia is cloud communication platform. My main role was to build the interfaces and dashboards for managing the service.",
-      "stack": ["angular", ".net"]
+      "stack": ["AngularJS", ".Net"]
     },
     {
       "title": "Frontend Developer",
@@ -40,7 +40,7 @@
       "till": "2012-09-01",
       "location": "Moscow, Russia",
       "description": "Alpari is one of the biggest Russian Forex companies. Being part of the web developers team we launched the redesigned version of the main company website.",
-      "stack": ["jquery", "php"]
+      "stack": ["jQuery", "PHP"]
     }
   ]
 }
