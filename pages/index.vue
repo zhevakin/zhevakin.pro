@@ -14,7 +14,7 @@
       </div>
       <div class="mb-8">
         <a
-          href="https://github.com/Xvakin"
+          href="https://github.com/zhevakin"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey mr-8"
@@ -22,7 +22,7 @@
           GitHub
         </a>
         <a
-          href="https://www.linkedin.com/in/xvakin/"
+          href="https://www.linkedin.com/in/zhevakin/"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
