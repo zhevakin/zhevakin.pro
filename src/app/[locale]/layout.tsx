@@ -28,14 +28,15 @@ export async function generateMetadata({
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  const messages = useMessages();
+  const { locale } = await params;
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
 
   return (
     <html lang={locale}>
