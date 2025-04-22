@@ -1,7 +1,8 @@
 {
   "hero": {
     "title": "Ivan Zhevakin",
-    "subtitle": "Product-focused web developer"
+    "subtitle": "Product-focused web developer",
+    "location": "Barcelona, Spain"
   },
   "about": {
     "title": "About",
