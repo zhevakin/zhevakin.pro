@@ -1,8 +1,12 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations();
+  const locale = useLocale();
+
+  // Determine the Quizzly domain based on the language
+  const quizzlyDomain = locale === 'ru' ? 'quizzly.ru' : 'quizzly.io';
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -96,7 +100,7 @@ export default function Home() {
             <div className="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
               <h3 className="mb-2 text-xl font-medium text-gray-900 dark:text-white">
                 <a
-                  href="https://quizzly.io"
+                  href={`https://${quizzlyDomain}`}
                   className="hover:text-blue-600 dark:hover:text-blue-400"
                 >
                   {t('projects.quizzly.title')}
