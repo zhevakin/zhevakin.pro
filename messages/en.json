@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Ivan Zhevakin",
+    "subtitle": "Product-focused web developer"
+  },
+  "about": {
+    "title": "About",
+    "content": "With over 15 years of web development experience since 2008, I specialize in building complex web applications using modern JavaScript frameworks like React, Vue, and Angular. I'm passionate about creating exceptional UI/UX experiences that delight users. I believe in the power of motivated teams and maintain high standards for team communication and collaboration."
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "quizzly": {
+      "title": "Quizzly.io",
+      "description": "A platform for hosting engaging trivia games"
+    },
+    "unislide": {
+      "title": "Unislide.io",
+      "description": "An interactive presentation platform with integrated polls and quizzes"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "dice": {
+      "title": "Senior Frontend Developer",
+      "company": "Dice",
+      "period": "Aug 2021 - Present",
+      "description": "London-based ticketing service focused on getting people out more. Contributing to the growth of web services for music fans and promoters."
+    },
+    "uscreen": {
+      "title": "Lead Frontend Developer",
+      "company": "Uscreen",
+      "period": "Jun 2020 - Aug 2021",
+      "description": "Led frontend development for a popular Video OTT service with 5-year history. Built the frontend team and established higher development standards."
+    },
+    "paulcamper": {
+      "title": "Lead Frontend Developer",
+      "company": "PaulCamper GmbH",
+      "period": "Nov 2015 - Jun 2020",
+      "description": "First frontend developer at a Berlin-based camper van sharing platform. Built MVP and later managed a team of 5 developers."
+    },
+    "intermedia": {
+      "title": "Senior Frontend Developer",
+      "company": "Intermedia",
+      "period": "Apr 2013 - Jul 2015",
+      "description": "Built interfaces and dashboards for managing the cloud communication platform."
+    },
+    "alpari": {
+      "title": "Frontend Developer",
+      "company": "Alpari",
+      "period": "Aug 2010 - Sep 2012",
+      "description": "Part of the web developers team that launched the redesigned version of the main company website for one of Russia's biggest Forex companies."
+    }
+  }
+}
