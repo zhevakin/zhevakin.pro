@@ -10,11 +10,11 @@
   "projects": {
     "title": "Personal Projects",
     "quizzly": {
-      "title": "quizzly.io",
+      "title": "Quizzly",
       "description": "A platform for hosting engaging trivia games"
     },
     "unislide": {
-      "title": "unislide.io",
+      "title": "Unislide",
       "description": "An interactive presentation platform with integrated polls and quizzes"
     }
   },

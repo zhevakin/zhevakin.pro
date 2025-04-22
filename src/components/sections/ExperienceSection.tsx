@@ -25,12 +25,11 @@ export default function ExperienceSection() {
           </p>
           <div className="mb-2 flex flex-wrap gap-2">
             <Badge variant="outline">React</Badge>
-            <Badge variant="outline">Node</Badge>
-            <Badge variant="outline">GitHub</Badge>
+            <Badge variant="outline">Next.js</Badge>
             <Badge variant="outline">AWS</Badge>
-            <Badge variant="outline">Sentry</Badge>
+            <Badge variant="outline">Docker</Badge>
+            <Badge variant="outline">Storybook</Badge>
             <Badge variant="outline">Prismic</Badge>
-            <Badge variant="outline">Figma</Badge>
           </div>
         </div>
 
@@ -50,14 +49,9 @@ export default function ExperienceSection() {
           <div className="mb-2 flex flex-wrap gap-2">
             <Badge variant="outline">Vue</Badge>
             <Badge variant="outline">Ruby on Rails</Badge>
-            <Badge variant="outline">GitHub</Badge>
             <Badge variant="outline">Heroku</Badge>
             <Badge variant="outline">Docker</Badge>
             <Badge variant="outline">Storybook</Badge>
-            <Badge variant="outline">Sentry</Badge>
-            <Badge variant="outline">Fastly</Badge>
-            <Badge variant="outline">Mixpanel</Badge>
-            <Badge variant="outline">Figma</Badge>
           </div>
         </div>
 
@@ -81,12 +75,6 @@ export default function ExperienceSection() {
             <Badge variant="outline">Node</Badge>
             <Badge variant="outline">GitHub</Badge>
             <Badge variant="outline">Heroku</Badge>
-            <Badge variant="outline">Sentry</Badge>
-            <Badge variant="outline">Cloudflare</Badge>
-            <Badge variant="outline">Mixpanel</Badge>
-            <Badge variant="outline">Optimizely</Badge>
-            <Badge variant="outline">Sketch</Badge>
-            <Badge variant="outline">Zeplin</Badge>
           </div>
         </div>
 

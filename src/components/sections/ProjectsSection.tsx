@@ -1,6 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-
+import { Badge } from '@/components/ui/badge';
 export default function ProjectsSection() {
   const t = useTranslations();
   const locale = useLocale();
@@ -21,12 +21,21 @@ export default function ProjectsSection() {
                 href={`https://${quizzlyDomain}`}
                 className="hover:text-blue-600 dark:hover:text-blue-400"
               >
-                {t('projects.quizzly.title')}
+                <span className="block">{t('projects.quizzly.title')}</span>
+                <span className="block text-sm text-gray-500">{quizzlyDomain}</span>
               </a>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600 dark:text-gray-300">{t('projects.quizzly.description')}</p>
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              {t('projects.quizzly.description')}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="outline">React</Badge>
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">TypeScript</Badge>
+              <Badge variant="outline">Firebase</Badge>
+            </div>
           </CardContent>
         </Card>
         <Card>
@@ -36,12 +45,22 @@ export default function ProjectsSection() {
                 href="https://unislide.io"
                 className="hover:text-blue-600 dark:hover:text-blue-400"
               >
-                {t('projects.unislide.title')}
+                <span className="block">{t('projects.unislide.title')}</span>
+                <span className="block text-sm text-gray-500">https://unislide.io</span>
               </a>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600 dark:text-gray-300">{t('projects.unislide.description')}</p>
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              {t('projects.unislide.description')}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="outline">React</Badge>
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">TypeScript</Badge>
+              <Badge variant="outline">Firebase</Badge>
+            </div>
           </CardContent>
         </Card>
       </div>
