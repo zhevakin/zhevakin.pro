@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa6';
+import { Badge } from '@/components/ui/badge';
 
 export default function Home() {
   const t = useTranslations();
@@ -129,23 +130,13 @@ export default function Home() {
                 {t('experience.dice.description')}
               </p>
               <div className="mb-2 flex flex-wrap gap-2">
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">
-                  React
-                </span>
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">Node</span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  GitHub
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">AWS</span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Sentry
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Prismic
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">Figma</span>
+                <Badge variant="outline">React</Badge>
+                <Badge variant="outline">Node</Badge>
+                <Badge variant="outline">GitHub</Badge>
+                <Badge variant="outline">AWS</Badge>
+                <Badge variant="outline">Sentry</Badge>
+                <Badge variant="outline">Prismic</Badge>
+                <Badge variant="outline">Figma</Badge>
               </div>
             </div>
 
@@ -165,34 +156,16 @@ export default function Home() {
                 {t('experience.uscreen.description')}
               </p>
               <div className="mb-2 flex flex-wrap gap-2">
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">Vue</span>
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">
-                  Ruby on Rails
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  GitHub
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Heroku
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Docker
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Storybook
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Sentry
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Fastly
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Mixpanel
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">Figma</span>
+                <Badge variant="outline">Vue</Badge>
+                <Badge variant="outline">Ruby on Rails</Badge>
+                <Badge variant="outline">GitHub</Badge>
+                <Badge variant="outline">Heroku</Badge>
+                <Badge variant="outline">Docker</Badge>
+                <Badge variant="outline">Storybook</Badge>
+                <Badge variant="outline">Sentry</Badge>
+                <Badge variant="outline">Fastly</Badge>
+                <Badge variant="outline">Mixpanel</Badge>
+                <Badge variant="outline">Figma</Badge>
               </div>
             </div>
 
@@ -212,36 +185,16 @@ export default function Home() {
                 {t('experience.paulcamper.description')}
               </p>
               <div className="mb-2 flex flex-wrap gap-2">
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">
-                  React
-                </span>
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">Node</span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  GitHub
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Heroku
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Sentry
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Cloudflare
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Mixpanel
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Optimizely
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Sketch
-                </span>
-                <span className="rounded bg-gray-50 px-2 py-1 text-sm dark:bg-gray-800">
-                  Zeplin
-                </span>
+                <Badge variant="outline">React</Badge>
+                <Badge variant="outline">Node</Badge>
+                <Badge variant="outline">GitHub</Badge>
+                <Badge variant="outline">Heroku</Badge>
+                <Badge variant="outline">Sentry</Badge>
+                <Badge variant="outline">Cloudflare</Badge>
+                <Badge variant="outline">Mixpanel</Badge>
+                <Badge variant="outline">Optimizely</Badge>
+                <Badge variant="outline">Sketch</Badge>
+                <Badge variant="outline">Zeplin</Badge>
               </div>
             </div>
 
@@ -261,10 +214,8 @@ export default function Home() {
                 {t('experience.intermedia.description')}
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">
-                  AngularJS
-                </span>
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">.Net</span>
+                <Badge variant="outline">AngularJS</Badge>
+                <Badge variant="outline">.Net</Badge>
               </div>
             </div>
 
@@ -284,10 +235,8 @@ export default function Home() {
                 {t('experience.alpari.description')}
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">
-                  jQuery
-                </span>
-                <span className="rounded bg-gray-100 px-2 py-1 text-sm dark:bg-gray-700">PHP</span>
+                <Badge variant="outline">jQuery</Badge>
+                <Badge variant="outline">PHP</Badge>
               </div>
             </div>
           </div>
