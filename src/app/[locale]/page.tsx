@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa6';
 import { Badge } from '@/components/ui/badge';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function Home() {
   const t = useTranslations();
@@ -81,32 +82,40 @@ export default function Home() {
             {t('projects.title')}
           </h2>
           <div className="space-y-6">
-            <div className="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
-              <h3 className="mb-2 text-xl font-medium text-gray-900 dark:text-white">
-                <a
-                  href={`https://${quizzlyDomain}`}
-                  className="hover:text-blue-600 dark:hover:text-blue-400"
-                >
-                  {t('projects.quizzly.title')}
-                </a>
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                {t('projects.quizzly.description')}
-              </p>
-            </div>
-            <div className="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
-              <h3 className="mb-2 text-xl font-medium text-gray-900 dark:text-white">
-                <a
-                  href="https://unislide.io"
-                  className="hover:text-blue-600 dark:hover:text-blue-400"
-                >
-                  {t('projects.unislide.title')}
-                </a>
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                {t('projects.unislide.description')}
-              </p>
-            </div>
+            <Card>
+              <CardHeader>
+                <CardTitle>
+                  <a
+                    href={`https://${quizzlyDomain}`}
+                    className="hover:text-blue-600 dark:hover:text-blue-400"
+                  >
+                    {t('projects.quizzly.title')}
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {t('projects.quizzly.description')}
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>
+                  <a
+                    href="https://unislide.io"
+                    className="hover:text-blue-600 dark:hover:text-blue-400"
+                  >
+                    {t('projects.unislide.title')}
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {t('projects.unislide.description')}
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
